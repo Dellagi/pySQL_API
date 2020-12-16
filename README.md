@@ -7,6 +7,7 @@ This is a simple approach to Object relational mapping, that allows you to you f
 without the need to write the appropriate queries, insert/update..., for different elements
 
 * Python +3.6 is required, only build-in libraries were used.
+* PokemonApp is a pokemon game where I implemented `pyORM`
 
 __Add__:
   In order to insert an object, all you have to do is:
