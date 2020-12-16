@@ -93,7 +93,7 @@ dbSession.filterBy.delete(tablename="dummy", arg1="...", arg2=1, ...)[0]
      # Just replace self.name = name with
     self.name = [name, "VARCHAR(255)", {"PRIMARY KEY": False, "AUTOINCREMENT": False, "FOREIGN KEY {} REFERENCES ...": False}]
 ```
-  > In `self.name[2]` you can set any number of contrains you wish or none, but you must specify whether it's a primary key.
+  * In `self.name[2]` you can set any number of contrains you wish or none, but you must specify whether it's a primary key.
   
   Let make this more interesting and add the decorator!
   
