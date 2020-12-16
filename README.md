@@ -3,10 +3,11 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)]() [![Python](https://img.shields.io/badge/python-%2B3.6-green)]() [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-This is a simple approach to Object relational mapping, the way it works is simple:
+This is a simple approach to Object relational mapping, that allows you to you focus on objects manipulations and ligcal structures,
+without the need to write the appropriate queries, insert/update..., for different elements
 
 * Python +3.6 is required, only build-in libraries were used.
-
+*
 __Add__:
   In order to insert an object, all you have to do is:
 ```python
@@ -51,6 +52,30 @@ dbSession = orm(obj_)
 updates_ = {k:v[0] for k, v in obj_.__dict__.items() if k[0]!="_"}
 # pKey is the name of the primary key
 dbSession.update({pKey: getattr(obj_, pKey)[0]}, **updates_)
+```
+
+
+__Get__:
+  This module works in two directions, either it project your python's objects to a relational database,
+  or create/reinitiate previously created objects based on the data saved in the DB.
+  
+> In this case you shouldn't initialize `orm` with an object like in the previous examples.
+```python
+dbSession = orm()
+#Specifying tablename is the only requirement, then you can send any number of arguments (the logical operator between them is 'AND')
+respSQL = dbSession.filterBy.get(tablename="dummy", arg1="...", arg2=1, ...)[0]
+# I added [0] because I only wanted the first item from the array, but you can iterate you initiate multiple objects
+obj_ = yourClass(*respSQL)
+```
+
+__Delete__:
+  The same as in __Get__
+  
+```python
+dbSession = orm()
+#Specifying tablename is the only requirement, then 
+respSQL = dbSession.filterBy.get(tablename="dummy", arg1="...", arg2=1, ...)[0]
+obj_ = yourClass(*respSQL)
 ```
 
  ### In a nutshell:
@@ -100,17 +125,16 @@ if not dbSession.add():
   print("{} Added successfully".format(crocodil.name[0]))
 
 
+
 #Example of an attack
-
 print(pika.hp[0], crocodil.hp[0])
-
 # After the attack 'crocodil' will lose health points and the decorator will save the updated value in the database
 crocodil = pika.attack(crocodil)
-
 print(pika.hp[0], crocodil.hp[0])
 
-# Extract pokemons attributes and instantiate pokemon object
 
+
+# Extract pokemons attributes and instantiate pokemon object
 dbSession = orm()
 
 pokSQL = dbSession.filterBy.get(tablename="dummy", name="Pikachu")[0]
