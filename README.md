@@ -26,21 +26,24 @@ __Update__:
     and apply the updates to the appropriate table in the database
    
 ```python
-@updateAfterEvent
-def method1(self, args...):
-  ...
-  return self
+from utils import updateAfterEvent
+...
+class foo:
+  @updateAfterEvent
+  def method1(self, args...):
+    ...
+    return self
 
-@updateAfterEvent
-def method2(self, obj_2, args ...):
-  ...
-  return obj_2
+  @updateAfterEvent
+  def method2(self, obj_2, args ...):
+    ...
+    return obj_2
 ```
- * You can put the decorator in a separate file then import it wherever you'll be using it (Ex: `pokemonApp/mytools/utils.py`)
+ * You can put the decorator in a separate file then import it wherever you'll be using it (Ex: `utils.py`)
  
   > Manual update
   
-  You can use the function `updateObj` (defined also in `pokemonApp/mytools/utils.py`):
+  You can use the function `updateObj` (defined in `utils.py`):
 ```python
 from utils import updateObj
 obj_.attr += 10
