@@ -1,0 +1,121 @@
+{
+
+'signin': [
+	{
+		'type': 'input',
+		'name': 'username',
+		'message': 'Enter your username',
+		'validate': "userValidator"
+	},
+	{
+		'type': 'password',
+		'name': 'password',
+		'message': 'Enter your password'
+	}
+],
+
+'signup': [
+	{
+		'type': 'input',
+		'name': 'username',
+		'message': 'Enter your username',
+		'validate': "userValidator"
+	},
+	{
+		'type': 'password',
+		'name': 'password',
+		'message': 'Enter your password',
+		'validate': "lambda val: len(val) >= 5"
+
+	}
+],
+'Menu1': [
+	{
+		'type': 'list',
+		'name': 'currentQ',
+		'message': 'Welcome to the pokemon world',
+		'choices': [
+			'Sign up',
+			'Login',
+			"Separator()",
+			'Exit'
+		]
+	}
+],
+'Menu2': [
+	{
+		'type': 'list',
+		'name': 'currentQ',
+		'message': 'Main menu',
+		'choices': [
+			'Check you PokeDex',
+			'Go to the PokeCenter',
+			'Navigation',
+			'Show the pokemons in my zone',
+			'Fight a trainer',
+			'Check my portfolio',
+			'My pokemon collection',
+			"Separator()",
+			'Disconnect',
+			'Exit'
+		]
+	}
+],
+
+'pokedexMenu': [
+	{
+		'type': 'list',
+		'name': 'currentQ',
+		'message': '',
+		'choices': []
+	}
+],
+
+'targetpokeMenu': [
+	{
+		'type': 'list',
+		'name': 'currentQ',
+		'message': '',
+		'choices': []
+	}
+],
+
+'targetdressMenu': [
+	{
+		'type': 'list',
+		'name': 'currentQ',
+		'message': '',
+		'choices': []
+	}
+],
+
+'fightPok': [
+	{
+		'type': 'list',
+		'name': 'currentQ',
+		'message': '',
+		'choices': ['Info', 'Fight', 'Capture']
+	}
+],
+
+'NavigationMenu': [
+	{
+		'type': 'list',
+		'name': 'currentQ',
+		'message': '',
+		'choices': ['up', 'down', 'right', 'left', 'Go back to the main menu']
+	}
+],
+
+'pokeCenterMenu': [
+	{
+		'type': 'list',
+		'name': 'currentQ',
+		'message': 'What do you want to buy?',
+		'choices': ['Baies', 'pokeballs', 'Go back to the main menu']
+	}
+]
+}
+
+
+
