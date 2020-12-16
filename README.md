@@ -21,9 +21,10 @@ __Add__:
 __Update__:
   In order To save the updates:
   > Automatic update (using a decorator):
-    As you can see in `classExample.py`, all you need to do is to put is `@updateAfterEvent` on top of the method,
-    once the method returns the updated object (Example: `return self` or `return Obj`), the decorator will catch it
-    and apply the updates to the appropriate table in the database
+  
+As you can see in `classExample.py`, all you need to do is to put is `@updateAfterEvent` on top of the method,
+once the method returns the updated object (Example: `return self` or `return Obj`), the decorator will catch it
+and apply the updates to the appropriate table in the database
    
 ```python
 from utils import updateAfterEvent
