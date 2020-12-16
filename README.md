@@ -39,8 +39,10 @@ def method2(self, obj_2, args ...):
  * You can put the decorator in a separate file then import it wherever you'll be using it (Ex: `pokemonApp/mytools/utils.py`)
  
   > Manual update
+  
   You can use the function `updateObj` (defined also in `pokemonApp/mytools/utils.py`):
 ```python
+from utils import updateObj
 obj_.attr += 10
 updateObj(obj_)
 ````
