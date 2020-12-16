@@ -101,7 +101,7 @@ dbSession.filterBy.delete(tablename="dummy", arg1="...", arg2=1, ...)[0]
   Let make this more interesting and add the decorator!
   
    ```python
- from mytools.utils import updateAfterEvent
+ from myutils import updateAfterEvent
   
  class dummy:
    ...
