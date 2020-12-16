@@ -1,6 +1,6 @@
 ### A Pokemon game:
 
-This is nice implementation of `__pyORM__` in a simple Pokemon game, the game is based on a public API (`https://pokeapi.co/api/v2/`)
+This is a nice implementation of `__pyORM__` in a simple Pokemon game, the game is based on a public API (`https://pokeapi.co/api/v2/`)
 
 __Requirements__:
 * python +3.6 is required
