@@ -22,8 +22,7 @@ $ python3 main.py
 ```
 
 __Important__:
-Setting ORM implementation aside, this application I believe is a neat approach to make a console application using PyInquirer menues with smooth and stable transitions between menus, and hadling eleagant display of information.
-`state_manager` is a variable in `main.py`, the idea is inspired from the notion of state management in React/VueJS, to handle transitions between differents PyInquirer's menus to avoid having multiple recursive `eval/exec` and maintain a stable control flow while the game is running. The returns of the functions triggered via `eval` is also an analogy of `this.$emit` from React/VueJS.
+Setting ORM implementation aside, there's also PokemonApp in the repo, it's an approach to make a console application using PyInquirer menues with smooth and stable transitions between menus, hadling easily (I hope) the display of information and messages. `state_manager` is a variable in `main.py`, the idea is inspired from the notion of state management in React/VueJS, when added to the form of returns from `poktools.py` it became able to handles the transitions between menus in a way that avoids having multiple nested `eval/exec` and maintain a stable flow of execution. Those returns (of the functions triggered via eval) are also an analogy of `this.$emit` from React/VueJS.
 
 
 __Few screenshots__:
