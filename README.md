@@ -76,8 +76,8 @@ __Delete__:
 ```python
 dbSession = orm()
 #Specifying tablename is the only requirement, then 
-respSQL = dbSession.filterBy.get(tablename="dummy", arg1="...", arg2=1, ...)[0]
-obj_ = yourClass(*respSQL)
+dbSession.filterBy.delete(tablename="dummy", arg1="...", arg2=1, ...)[0]
+
 ```
 
  ### In a nutshell:
