@@ -21,5 +21,11 @@ $ pip3 install -r requirements.txt
 $ python3 main.py
 ```
 
+__Few screenshots__:
 
-![alt text](https://raw.githubusercontent.com/Dellagi/pySQL_API/main/pokemonApp/screenshot_1.png?raw=true)
+![](https://raw.githubusercontent.com/Dellagi/pySQL_API/main/pokemonApp/assets/screenshot_1.png)
+
+![](https://raw.githubusercontent.com/Dellagi/pySQL_API/main/pokemonApp/assets/screenshot_2.png)
+
+![](https://raw.githubusercontent.com/Dellagi/pySQL_API/main/pokemonApp/assets/screenshot_3.png)
+
