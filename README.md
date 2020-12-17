@@ -1,6 +1,6 @@
 # pySQL_API
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue)]() [![Python](https://img.shields.io/badge/python-%2B3.6-green)]() [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue)]() [![Python](https://img.shields.io/badge/python-%2B3.6-green)]() [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202-blue)](https://opensource.org/licenses/Apache-2.0)
 
 
 This is a simple approach to Object relational mapping, that allows you to you focus on objects manipulations and ligcal structures,
