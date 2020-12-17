@@ -1,0 +1,6 @@
+requests
+tqdm
+PyInquirer
+prompt-toolkit==1.0.14
+prettytable
+pyfiglet
