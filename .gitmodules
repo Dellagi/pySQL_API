@@ -1,3 +1,6 @@
 [submodule "pokemonGame"]
 	path = pokemonGame
 	url = https://github.com/Dellagi/pokemonApp
+[submodule "pokemonWorld"]
+	path = pokemonWorld
+	url = https://github.com/Dellagi/pokemonApp
